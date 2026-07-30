@@ -191,7 +191,7 @@
         e.preventDefault();
         navigator.clipboard.writeText(email).then(() => {
           const original = link.innerHTML;
-          link.innerHTML = link.innerHTML.replace(/(Email|✉️ Email)/g, '✅ ¡Copiado!');
+          link.innerHTML = link.innerHTML.replace(/(Email|✉️ Email)/g, '✅ Copiat!');
           setTimeout(() => { link.innerHTML = original; }, 2000);
         }).catch(() => { /* fallback: let default mailto open */ });
       }
